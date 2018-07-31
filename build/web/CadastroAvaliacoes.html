@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Avaliações</title>
+        <meta charset="UTF-8">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/StyleSheet.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="row">
+                    <h1>Cadastro Avaliação </h1>
+
+                    <form class="col s12" id="form-cadastroAvaliacao">
+                        <div class="row">
+                                <div class="input-field col s12" >
+                                    <select multiple id="selectCli"> </select>
+                                    <label>Selecione os Clientes</label>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class=" input-field col 12">
+                                <input  id="datepicker" type="text" class="datepicker" class="validate require" required>
+                                <label for="datepicker" class="active"> Mes e Ano de Referencia</label>
+                                <span class="helper-text" data-error="Data Invalida"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" input-field col 12">
+                                <button class="btn waves-effect waves-light" type="submit" id="btn-cadastraAva">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+        <!-- Jquery-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        <!-- JavaScript-->
+        <script src="js/cadastraAvaliacao.js"></script>
+        <script src="js/ListaCli.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
